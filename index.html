@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Giant Panda Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+            <h1>Giant Panda Quiz</h1>
+            <p>The giant panda is one of the world's most fascinating creatures! Take this quiz to test your knowledge about pandas - will you bear-ly pass, or ace the test? Find out now!</p>
+            <p>You can find the answers to this quiz about giant pandas <a href="https://en.wikipedia.org/wiki/Giant_panda">here!</a></p>
+                <form>
+                    <div class="mb-3">
+                        <label for="firstQuestion" class="form-label fw-bold">From what country does the giant panda originate?</label>
+                        <input type="text" class="form-control" name="country" id="firstQuestion">
+                     </div>
+
+                     <div class="mb-3">
+                        <p class="form-label">
+                            <span class="fw-bold">Which of the following items are found in the giant panda's diet?</span>
+                            <br>Select all that apply.
+                        </p>
+
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="diet" value="" id="checkboxBamboo">
+                        <label class="form-check-label" for="checkboxBamboo">
+                            Bamboo
+                        </label>
+                        </div>
+
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="diet" value="" id="checkboxFruit">
+                        <label class="form-check-label" for="checkboxFruit">
+                            Fruits
+                        </label>
+                        </div>
+
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="diet" value="" id="checkboxEggs">
+                        <label class="form-check-label" for="checkboxEggs">
+                            Eggs
+                        </label>
+                        </div>
+
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="diet" value="" id="checkboxFish">
+                        <label class="form-check-label" for="checkboxFish">
+                            Fish
+                        </label>
+                        </div>
+
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="diet" value="" id="checkboxNuts">
+                        <label class="form-check-label" for="checkboxNuts">
+                            Nuts
+                        </label>
+                      </div>
+                     </div>
+
+                     <div class="mb-3">
+                        <p class="form-label">
+                            <span class="fw-bold">How much does a typical giant panda newborn weigh?</span>
+                            <br>Select one.
+                        </p>
+                        
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="weight" value="50to90" id="radio50to90">
+                        <label class="form-check-label" for="radio50to90">
+                            50g to 90g
+                        </label>
+                        </div>
+
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="weight" value="90to130" id="radio90to130">
+                        <label class="form-check-label" for="radio90to130">
+                            90g to 130g
+                        </label>
+                        </div>
+
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="weight" value="130to170" id="radio130to170">
+                        <label class="form-check-label" for="radio130to170">
+                            130g to 170g
+                        </label>
+                        </div>
+
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="weight" value="170to210" id="radio170to210">
+                        <label class="form-check-label" for="radio170to210">
+                            170g to 210g
+                        </label>
+                        </div>
+                     </div>
+
+                     <div class="mb-3">
+                        <label for="fourthQuestion" class="form-label fw-bold">Based on scientific classification, what is the species name of the giant panda?</label>
+                        <input type="text" class="form-control" name="species" id="fourthQuestion">
+                     </div>
+
+                     <div class="mb-3">
+                        <label for="fifthQuestion" class="form-label fw-bold">What is one benefit a giant panda's unqiue coat DOES NOT provide?</label>
+                        <select class="form-select form-select-md" name="coat" id="fifthQuestion">
+                            <option selected>Choose...</option>
+                            <option value="Camo">To camoflauge pandas in shade and snow.</option>
+                            <option value="Aggression">To show aggression.</option>
+                            <option value="Identification">To differentiate between and identify other pandas.</option>
+                            <option value="Incorrect">To maintain a panda's homeostasis while in hibernation.</option>
+                            <option value="Warmth">To keep pandas warm in the cool forest.</option>
+                            <option value="BreakUp">To camoflauge pandas by breaking up their outline.</option>
+                        </select>
+                     </div>
+
+                     <div class="mb-3">
+                        <label for="sixthQuestion" class="form-label fw-bold">What are the (non-scientific) names of the two giant panda subspecies, and where are they found?</label>
+                        <textarea class="form-control" name="subspecies" id="sixthQuestion" rows="2"></textarea>
+                     </div>
+
+                     <button type="submit" class="btn btn-primary" value="submit">Submit Quiz</button>
+                     <button type="reset" class="btn btn-secondary" value="reset">Restart Quiz</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
